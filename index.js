@@ -101,13 +101,13 @@ const sti2 = new Stikline(150);
 const sti3 = new Stikline(100);
 
 sti.ipilti(130);
-console.log(sti.ispilti());
+console.log(sti.stiklinejeYra());
 
 sti2.ipilti(sti.ispilti());
-console.log(sti2.ispilti());
+console.log(sti2.stiklinejeYra());
 
 sti3.ipilti(sti2.ispilti());
-console.log(sti3.ispilti());
+console.log(sti3.stiklinejeYra());
 
 //Task 9
 

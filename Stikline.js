@@ -5,17 +5,17 @@ class Stikline{
     }
 
     ipilti(kiekis){
-        const min = 0;
-        const max = this.turis;
-        const num = kiekis;
-
-        const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-        
-        this.kiekis = clamp(kiekis, min, max);
+        this.kiekis = Math.min(this.turis, this.kiekis + kiekis);
     }
 
     ispilti(){
-        return this.kiekis;
+        const temp = this.kiekis;
+        this.kiekis = 0;
+        return temp;
+    }
+
+    stiklinejeYra(){
+        return `Skysčio yra ${this.kiekis} ir tūrio ${this.turis}`;
     }
 }
 
